@@ -49,7 +49,7 @@ export default function Receipt({ data }) {
               Form 1-A
             </p>
             <p className="text-[10px] tracking-widest text-zinc-400 uppercase">
-              Est. Today
+              Pst. Today
             </p>
           </div>
         </div>
