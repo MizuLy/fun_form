@@ -1,5 +1,5 @@
 const { prisma } = require("../config/db");
-const { makeCode } = require("../utils/makeCode");
+const { PermissionCodessionCode } = require("../utils/makeCode");
 
 const addPermission = async (req, res) => {
   try {
@@ -19,7 +19,7 @@ const addPermission = async (req, res) => {
         reason,
         date: new Date(date),
         dueDate: new Date(dueDate),
-        code: makeCode(),
+        code: PermissionCode(),
       },
     });
 

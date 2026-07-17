@@ -23,3 +23,12 @@ model Permission{
   code String
   createdAt DateTime @default(now())
 }
+
+model Certificate{
+  id String @id @default(uuid())
+  name String
+  achievement String
+  issuedBy String
+  code String
+  issuedDate DateTime @default(now())
+}

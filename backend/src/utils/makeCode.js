@@ -1,5 +1,9 @@
-const makeCode = () => {
+const PermissionCode = () => {
   return "PF-" + Math.random().toString(36).slice(2, 8).toUpperCase();
 };
 
-module.exports = { makeCode };
+const CertificateCode = () => {
+  return "CTF-" + Math.random().toString(36).slice(2, 8).toUpperCase();
+};
+
+module.exports = { PermissionCode, CertificateCode };
