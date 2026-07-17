@@ -1,5 +1,5 @@
 const { prisma } = require("../config/db");
-const { CertificateCodetificateCode } = require("../utils/makeCode");
+const { CertificateCode } = require("../utils/makeCode");
 
 const addCertificate = async (req, res) => {
   try {
@@ -23,7 +23,8 @@ const addCertificate = async (req, res) => {
         name,
         achievement,
         issuedBy,
-        code,
+        code: certificate.code,
+        issuedDate: certificate.issuedDate,
       },
     });
   } catch (err) {

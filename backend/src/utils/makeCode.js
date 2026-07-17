@@ -1,5 +1,5 @@
 const PermissionCode = () => {
-  return "PF-" + Math.random().toString(36).slice(2, 8).toUpperCase();
+  return "PMF-" + Math.random().toString(36).slice(2, 8).toUpperCase();
 };
 
 const CertificateCode = () => {
