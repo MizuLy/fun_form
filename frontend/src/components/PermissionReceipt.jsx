@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { toPng } from "html-to-image";
 
-export default function Receipt({ data }) {
+export default function PermissionReceipt({ data }) {
   const receiptRef = useRef(null);
 
   const handleDownloadImage = async () => {
