@@ -47,7 +47,7 @@ export default function CertificateReceipt({ data }) {
         {/* Top label */}
         <div className="text-center mb-10">
           <p className="text-[9px] tracking-[0.5em] text-zinc-400 uppercase mb-3">
-            Office of Distinguished Achievements
+            Bureau of Reluctant Recognition
           </p>
           <div className="flex items-center gap-4 justify-center">
             <div className="h-px flex-1 bg-zinc-300" />
@@ -67,14 +67,14 @@ export default function CertificateReceipt({ data }) {
             Certificate
           </h1>
           <p className="text-sm italic text-zinc-500 tracking-widest">
-            of Excellence
+            of Alleged Excellence
           </p>
         </div>
 
         {/* Body */}
         <div className="flex-1 flex flex-col justify-center text-center gap-8">
           <p className="text-xs tracking-[0.3em] text-zinc-400 uppercase">
-            This certifies that
+            It is with mild surprise that we certify
           </p>
 
           <div>
@@ -93,7 +93,7 @@ export default function CertificateReceipt({ data }) {
 
           <div className="px-12">
             <p className="text-xs tracking-[0.2em] text-zinc-400 uppercase mb-3">
-              has distinguished themselves in
+              has, against considerable odds, completed
             </p>
             <p className="text-lg text-zinc-700 leading-relaxed italic">
               {data.achievement}
@@ -116,7 +116,7 @@ export default function CertificateReceipt({ data }) {
               </p>
               <div className="h-px w-32 bg-zinc-300 mb-1" />
               <p className="text-[9px] tracking-[0.3em] text-zinc-400 uppercase">
-                Issuing Authority
+                Reluctant Signatory
               </p>
             </div>
 
@@ -144,7 +144,8 @@ export default function CertificateReceipt({ data }) {
           </div>
 
           <p className="text-center text-[8px] tracking-[0.3em] text-zinc-300 uppercase mt-8">
-            {data.code} · Void if questioned too closely
+            {data.code} · Achievement may not be reproduced or bragged about
+            excessively
           </p>
         </div>
       </div>
