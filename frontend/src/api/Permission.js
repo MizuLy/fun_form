@@ -1,6 +1,3 @@
-import axios from "axios";
+import api from "./client";
 
-const API = import.meta.env.VITE_API_PERMISSION;
-
-console.log(API);
-export const createPermission = (data) => axios.post(API, data);
+export const createPermission = (data) => api.post("/permissions", data);

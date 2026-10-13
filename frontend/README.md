@@ -1,16 +1,25 @@
-# React + Vite
+# Random Form Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React and Vite frontend for generating permission, certificate, and invitation forms.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+The frontend expects the backend API at `http://localhost:6969/api`. Set `VITE_API_URL` in `.env` if the backend uses another address. Restart Vite after changing environment variables.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Available Commands
 
-## Expanding the ESLint configuration
+```bash
+npm run dev      # start local development
+npm run build    # create the production bundle
+npm run preview  # preview the production bundle
+npm run lint     # run ESLint
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Invitation forms collect a guest name, event, date, and start time. The frontend sends the date and time to `POST /api/invitations`; the backend stores them together as a Prisma `DateTime`. Receipts support browser printing and PNG download.
+
+See `AGENTS.md` for contribution, style, and review guidance.

@@ -1,5 +1,3 @@
-import axios from "axios";
+import api from "./client";
 
-const API = import.meta.env.VITE_API_CERTIFICATE;
-
-export const createCertificate = (data) => axios.post(API, data);
+export const createCertificate = (data) => api.post("/certificates", data);

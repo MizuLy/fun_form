@@ -39,6 +39,19 @@ export default function Home() {
           </div>
           <span className="text-zinc-600 text-lg">→</span>
         </Link>
+
+        <Link
+          to="/invitation"
+          className="flex justify-between items-center px-5 py-4 border border-zinc-800 rounded-lg hover:bg-zinc-900 transition-colors"
+        >
+          <div>
+            <p className="text-[11px] tracking-[0.2em] uppercase text-zinc-500 mb-1">
+              Form 3-C
+            </p>
+            <p className="text-sm font-medium text-zinc-50">Invitation</p>
+          </div>
+          <span className="text-zinc-600 text-lg">→</span>
+        </Link>
       </div>
 
       <p className="text-[10px] tracking-[0.2em] text-zinc-700 uppercase">
