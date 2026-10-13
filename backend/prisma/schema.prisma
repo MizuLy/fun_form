@@ -14,7 +14,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Permission{
+model Permission {
   id String @id @default(uuid())
   name String
   reason String
@@ -24,11 +24,20 @@ model Permission{
   createdAt DateTime @default(now())
 }
 
-model Certificate{
+model Certificate {
   id String @id @default(uuid())
   name String
   achievement String
   issuedBy String
   code String
   issuedDate DateTime @default(now())
+}
+
+model Invitation {
+  id String @id @default(uuid())
+  name String
+  event String
+  date DateTime
+  code String
+  createdAt DateTime @default(now())
 }

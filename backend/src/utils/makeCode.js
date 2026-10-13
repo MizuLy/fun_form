@@ -6,4 +6,8 @@ const CertificateCode = () => {
   return "CTF-" + Math.random().toString(36).slice(2, 8).toUpperCase();
 };
 
-module.exports = { PermissionCode, CertificateCode };
+const InvitationCode = () => {
+  return "INV-" + Math.random().toString(36).slice(2, 8).toUpperCase();
+};
+
+module.exports = { PermissionCode, CertificateCode, InvitationCode };

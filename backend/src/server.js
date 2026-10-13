@@ -4,6 +4,7 @@ const morgan = require("morgan");
 
 const permissionRoute = require("./routes/permission.route");
 const certificateRoute = require("./routes/certificate.route");
+const invitationRoute = require("./routes/invitation.route");
 
 const PORT = process.env.PORT || 6969;
 
@@ -15,6 +16,7 @@ app.use(morgan("dev"));
 
 app.use("/api/permissions", permissionRoute);
 app.use("/api/certificates", certificateRoute);
+app.use("/api/invitations", invitationRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
