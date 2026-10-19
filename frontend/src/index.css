@@ -20,6 +20,11 @@ body {
   #receipt * {
     visibility: visible;
   }
+  .receipt-scaler,
+  .receipt-scaler-inner {
+    height: auto !important;
+    transform: none !important;
+  }
   #receipt {
     position: absolute;
     top: 0;
