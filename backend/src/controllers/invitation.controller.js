@@ -4,6 +4,8 @@ const { InvitationCode } = require("../utils/makeCode");
 const createInvitation = async (req, res) => {
   try {
     const { name, event, date, time } = req.body;
+    const place = req.body.place?.trim() || null;
+    const chair = req.body.chair?.trim() || null;
 
     if (!name || !event || !date || !time)
       return res.status(400).json({ error: "All the fields are required" });
@@ -37,6 +39,8 @@ const createInvitation = async (req, res) => {
         name,
         event,
         date: invitationDate,
+        place,
+        chair,
         code: InvitationCode(),
       },
     });

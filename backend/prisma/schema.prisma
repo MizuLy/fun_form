@@ -38,6 +38,8 @@ model Invitation {
   name String
   event String
   date DateTime
+  place String?
+  chair String?
   code String
   createdAt DateTime @default(now())
 }
